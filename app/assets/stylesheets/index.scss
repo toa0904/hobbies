@@ -5,8 +5,10 @@
 .main {
   width: 700px;
   margin: 0 auto;
-  background-color: aquamarine;
-  &contents {
-    
+  padding: 15px;
+  margin-top: 50px;
+  background-color: #ccc;
+  &__contents__top {
+    text-align: center;
   }
 }

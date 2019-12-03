@@ -1,3 +1,6 @@
 = render 'shared/header'
-
--# = form_with model: @item, class: 'contents-box__form-list' do |f|
+.contents
+  .contents__form
+    = form_tag model: @tweet do
+      %label 
+      %input{type: "text", name: "text"}

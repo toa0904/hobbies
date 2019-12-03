@@ -14,5 +14,10 @@
   &__contents__bottom {
     background-color: brown;
     height: 300px;
+    img {
+      border: 1px solid #385185;
+      height: 100%;
+      width: 100%;
+    }
   }
 }

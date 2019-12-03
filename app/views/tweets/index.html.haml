@@ -1,12 +1,16 @@
 = render 'shared/header'
 
 %main
-  .main__contents
-    .main__contents__top
+  .contents
+    .contents__top
       = @tweet.name
-    .main__contents__image
+    .contents__image
       = image_tag ("#{@tweet.image}")
-    .main__contents__text
+    .contents__text
+      .button-like
+        %i.far.fa-heart
+        = link_to "#", class: "button-like__text" do
+          いいね！ 0
       = @tweet.text
 
 

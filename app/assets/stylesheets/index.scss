@@ -7,8 +7,12 @@
   margin: 0 auto;
   padding: 15px;
   margin-top: 50px;
-  background-color: #ccc;
   &__contents__top {
+    background-color: #ccc;
     text-align: center;
+  }
+  &__contents__bottom {
+    background-color: brown;
+    height: 300px;
   }
 }

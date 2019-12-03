@@ -16,6 +16,9 @@
 
 .main
   .main__contents__top
-    ユーザー名
+    = @tweet.name
+  .main__contents__bottom
+    = image_url ("#{@tweet.image}")
+
 
 

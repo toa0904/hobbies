@@ -1,11 +1,11 @@
 %nav
   .nav-wrapper
-    = link_to "", class: "brand-logo" do
+    = link_to root_path, class: "brand-logo" do
       投稿
     %ul
       #nav-mobile.right.hide-on-med-and-down
         %li
-          = link_to do
+          = link_to new_tweet_path do
             投稿する
         %li
           = link_to do

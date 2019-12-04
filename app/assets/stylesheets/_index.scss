@@ -6,11 +6,14 @@ main {
   height: 100%;
   width: 100%;
 }
-.contents {
+.content {
   width: 700px;
   margin: 0 auto;
   padding: 15px;
   margin-top: 50px;
+}
+.contents {
+  margin-top: 30px;
   &__top {
     background-color: #ccc;
     text-align: center;

@@ -13,8 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ @import './index';
+ @import './new';
+ @import './header';
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
- @import 'materialize';
- @import 'index';
  @import "./reset";

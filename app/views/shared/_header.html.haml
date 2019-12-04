@@ -5,11 +5,11 @@
     %ul
       #nav-mobile.right.hide-on-med-and-down
         %li
-          = link_to new_tweet_path do
+          = link_to new_tweet_path, class: 'header-text' do
             投稿する
         %li
-          = link_to do
+          = link_to new_tweet_path, class: 'header-text' do
             編集する
         %li
-          = link_to do
+          = link_to new_tweet_path, class: 'header-text' do
             削除する

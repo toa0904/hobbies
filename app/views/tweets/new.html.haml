@@ -1,7 +1,7 @@
 = render 'shared/header'
-.contents
+.contents-new
   .contents__form
-    = form_tag model: @tweet do
+    = form_tag model: @tweet, method: :post do
       %textarea.text-box(name="text" cols="50" rows="5" placeholder="ご自由にどうぞ")
       %input.text-image{type: "text", name: "image", placeholder: "画像URL"}
     .contents__form__btn

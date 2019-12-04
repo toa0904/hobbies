@@ -1,9 +1,13 @@
 class TweetsController < ApplicationController
   def index
-    @tweet = Tweet.find(1)
+    @tweet = Tweet.all
   end
 
   def new
   end
   
+  def create
+    
+  end
+
 end

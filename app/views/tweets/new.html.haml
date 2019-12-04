@@ -2,7 +2,7 @@
 .contents
   .contents__form
     = form_tag model: @tweet do
-      %input.text-box{type: "text", name: "text"}
-      %input.text-box{type: "text", name: "image"}
+      %textarea.text-box(name="text" cols="50" rows="5" placeholder="ご自由にどうぞ")
+      %input.text-image{type: "text", name: "image"}
       %button.next-btn{type: "submit"}
         投稿する

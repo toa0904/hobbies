@@ -1,0 +1,27 @@
+.contents__create {
+  width: 700px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 50px;
+  &__box {
+    border: 1px solid red;
+    padding: 30px;
+    h3 {
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+    }
+    .root_box {
+      text-align: center;
+      margin-top: 63px;
+      .root_btn {
+        text-decoration: none;
+        color: black;
+        border: 1px solid;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+

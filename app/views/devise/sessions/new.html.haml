@@ -1,0 +1,14 @@
+.main-contents
+  .contents-sign_up
+  %h1.title-hobbies
+    = link_to root_path, class: 'title' do
+      hobbies
+  %p.text-hobbies
+    こんにちは
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .field
+      = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-box", placeholder: "Eメール"
+    .field
+      = f.password_field :password, autocomplete: "new-password", class: "form-box", placeholder: "パスワード"
+    .actions
+      = f.submit "Log in", class: 'login-btn'

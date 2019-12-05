@@ -1,0 +1,57 @@
+.main-contents {
+  height: 100vh;
+  background-image: url(hobbies.jpg);
+}
+
+.top-contents {
+  display: inline-block;
+  padding: 25px;
+  float: right;
+  .header-text {
+    text-decoration: none;
+    border: 1px solid;
+    color: floralwhite;
+    background: firebrick;
+    padding: 12px;
+  }
+}
+
+.contents-sign_up {
+  padding-top: 150px;
+}
+
+.title-hobbies {
+  font-family: arial black;
+  font-size: 60px;
+  text-align: center;
+  .title {
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.text-hobbies {
+  text-align: center;
+  margin-top: 15px;
+  font-size: larger;
+  font-family: arial unicode ms;
+}
+
+.new_user {
+  margin-top: 20px;
+  text-align: center;
+}
+.form-box {
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.sign-btn {
+  margin-top: 10px;
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(40, 161, 241);
+}

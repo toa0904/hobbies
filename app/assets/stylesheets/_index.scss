@@ -47,5 +47,15 @@ main {
       background: red;
       border-radius: 5px;
     }
+    .edit-btn {
+      float: right;
+      margin-right: 10px;
+      text-decoration: none;
+      color: black;
+      border: 1px solid;
+      padding: 5px;
+      background: rgb(17, 206, 17);
+      border-radius: 5px;
+    }
   }
 }

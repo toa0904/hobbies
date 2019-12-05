@@ -1,6 +1,6 @@
 = render 'shared/header'
 .contents-new
-  = form_tag('/tweets', method: :post) do
+  = form_with url: tweets_path, method: :post do
     .contents__form
       %input{type: "text", name: "name", placeholder: "Nickname", class: 'text-image'}
       %input{type: "text", name: "image", placeholder: "画像URL", class: 'text-image'}

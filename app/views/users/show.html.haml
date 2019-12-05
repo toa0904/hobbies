@@ -1,0 +1,16 @@
+= render 'shared/header'
+%main
+  .content
+    %ul
+      - @tweet.each do |tweet|
+        .contents
+          %li
+            .contents__top
+              = tweet.name
+            .contents__image
+              = image_tag ("#{tweet.image}")
+            .contents__text
+              .button-like
+                %i.far.fa-heart
+              = tweet.text
+    = paginate(@tweet)

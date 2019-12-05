@@ -16,6 +16,7 @@
               = tweet.text
               - if user_signed_in? && current_user.id == tweet.user_id
                 = link_to '削除', "/tweets/#{tweet.id}", method: :delete, class: 'delete-btn'
+                = link_to '編集', "/tweets/#{tweet.id}/edit", method: :get, class: 'delete-btn'
     = paginate(@tweet)
 
 

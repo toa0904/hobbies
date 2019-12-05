@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get   'tweets/new'  =>  'tweets#new'       #ツイート投稿画面
   post  'tweets'      =>  'tweets#create' 
   get   'users/:id'    =>  'users#show'
+  delete 'tweets/:id' =>   'tweets#destroy'
   # resources :tweets do
   # end
 end

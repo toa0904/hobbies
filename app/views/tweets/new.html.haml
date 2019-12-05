@@ -2,7 +2,6 @@
 .contents-new
   = form_tag('/tweets', method: :post) do
     .contents__form
-      %input{type: "text", name: "name", placeholder: "Nickname", class: 'text-image'}
       %input{type: "text", name: "image", placeholder: "画像URL", class: 'text-image'}
       %textarea{name: "text", cols: "50", rows: "5", placeholder: "ご自由にどうぞ", class: 'text-box'}
     .contents__form__btn

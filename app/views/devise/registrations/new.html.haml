@@ -1,0 +1,20 @@
+= render 'shared/header'
+
+.main-contents
+  .contents-new
+    %h1.title-hobbies
+      hobbies
+    %p.text-hobbies
+      自分の好きなことを投稿しよう！
+      %br/
+      趣味の合う人とチャットもできる！
+    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      = render "devise/shared/error_messages", resource: resource
+      .field
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-box", placeholder: "Eメール"
+      .field
+        = f.password_field :password, autocomplete: "new-password", class: "form-box", placeholder: "パスワード"
+      .field
+        = f.password_field :password_confirmation, autocomplete: "new-password", class: "form-box", placeholder: "ユーザー名"
+      .actions
+        = f.submit "登録", class: "sign-btn"

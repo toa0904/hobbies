@@ -29,9 +29,22 @@ main {
   }
   &__text {
     height: 150px;
-    background-color: #388385;
+    background-color: white;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    border: 1px solid #385185;
     .button-like {
       padding: 8px 16px;
+    }
+    .delete-btn {
+      float: right;
+      margin-right: 10px;
+      text-decoration: none;
+      color: black;
+      border: 1px solid;
+      padding: 5px;
+      background: red;
+      border-radius: 5px;
     }
   }
 }

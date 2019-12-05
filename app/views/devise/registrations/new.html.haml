@@ -19,6 +19,6 @@
       .field
         = f.password_field :password, autocomplete: "new-password", class: "form-box", placeholder: "パスワード"
       .field
-        = f.password_field :password_confirmation, autocomplete: "new-password", class: "form-box", placeholder: "ユーザー名"
+        = f.text_field :password_confirmation, autocomplete: "new-password", class: "form-box", placeholder: "ユーザー名"
       .actions
         = f.submit "登録", class: "sign-btn"

@@ -1,0 +1,9 @@
+= render 'shared/header'
+%main
+  .contents-new
+    = form_tag('/tweets/#{@tweet.id}', method: :patch) do
+      .contents__form
+        %input{type: "text", name: "image", placeholder: "画像URL", class: 'text-image', value: "#{@tweet.image}"}
+        %textarea{name: "text", cols: "50", rows: "5", placeholder: "ご自由にどうぞ", class: 'text-box', value: "#{@tweet.text}"}
+      .contents__form__btn
+        %input.btn{type: "submit", value: '更新する'}

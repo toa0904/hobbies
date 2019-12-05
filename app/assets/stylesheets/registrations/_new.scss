@@ -4,18 +4,31 @@
 }
 
 .top-contents {
-
+  display: inline-block;
+  padding: 25px;
+  float: right;
+  .header-text {
+    text-decoration: none;
+    border: 1px solid;
+    color: floralwhite;
+    background: firebrick;
+    padding: 12px;
+  }
 }
 
 .contents-sign_up {
-  margin-top: 100px;
+  padding-top: 150px;
 }
 
 .title-hobbies {
   font-family: arial black;
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
-  font-style: italic;
+  .title {
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .text-hobbies {

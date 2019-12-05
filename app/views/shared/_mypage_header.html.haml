@@ -1,0 +1,21 @@
+%nav
+  .nav-wrapper
+    = link_to root_path, class: "brand-logo" do
+      = current_user.nickname
+      のページ
+    %ul
+      #nav-mobile.right.hide-on-med-and-down
+        - if user_signed_in?
+          %li
+            = link_to tweets_new_path, class: 'header-text' do
+              投稿する
+          %li
+            = link_to destroy_user_session_path, class: 'header-text', method: :delete do
+              ログアウト
+        - else
+          %li
+            = link_to new_user_session_path, class: 'header-text' do
+              ログイン
+          %li
+            = link_to new_user_registration_path, class: 'header-text' do
+              新規登録

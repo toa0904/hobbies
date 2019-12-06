@@ -14,8 +14,8 @@ class TweetsController < ApplicationController
   end
 
   def destroy
-    if tweet.user_id == current_user.id
-      tweet.destroy
+    if @tweet.user_id == current_user.id
+      @tweet.destroy
       redirect_to root_path
     end
   end

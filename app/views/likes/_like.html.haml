@@ -1,0 +1,3 @@
+.like_button_on
+  = link_to "いいね済み", likes_delete_path(tweet_id: @tweet.id), {method: "post", remote: true}
+  = @like_count

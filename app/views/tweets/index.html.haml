@@ -9,11 +9,10 @@
             .contents__top
               = tweet.user.nickname
             .contents__image
-              = link_to "/tweets/#{tweet.id}", method: :get do
-                = image_tag ("#{tweet.image}")
+              = image_tag ("#{tweet.image}")
             .contents__text
               .button-like
-                %i.far.fa-heart
+                %i.far.fa-comment
               = tweet.text
               - if user_signed_in? && current_user.id == tweet.user_id
                 = link_to '削除', "/tweets/#{tweet.id}", method: :delete, class: 'delete-btn'

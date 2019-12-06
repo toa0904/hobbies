@@ -1,8 +1,11 @@
 = render 'shared/header'
-.contents-new
-  = form_tag('/tweets', method: :post) do
-    .contents__form
-      %input{type: "text", name: "image", placeholder: "画像URL", class: 'text-image'}
-      %textarea{name: "text", cols: "50", rows: "5", placeholder: "ご自由にどうぞ", class: 'text-box'}
-    .contents__form__btn
-      %input.btn{type: "submit", value: '投稿する'}
+%main
+  .contents-new
+    = form_tag('/tweets', method: :post) do
+      .contents__form
+        %h1.post-text
+          投稿する
+        %input{type: "text", name: "image", placeholder: "画像URL", class: 'text-image'}
+        %textarea{name: "text", cols: "50", rows: "5", placeholder: "ご自由にどうぞ", class: 'text-box'}
+      .contents__form__btn
+        %input.btn{type: "submit", value: '投稿する'}

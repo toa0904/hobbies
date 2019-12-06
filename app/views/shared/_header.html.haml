@@ -9,7 +9,7 @@
             = link_to "/users/#{current_user.id}", class: 'header-text' do
               = current_user.nickname
           %li
-            = link_to tweets_new_path, class: 'header-text' do
+            = link_to new_tweet_path, class: 'header-text' do
               投稿する
           %li
             = link_to destroy_user_session_path, class: 'header-text', method: :delete do

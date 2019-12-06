@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   delete 'tweets/:id' =>   'tweets#destroy'
   patch  'tweets/:id' =>   'tweets#update'
   get   'tweets/:id/edit' => 'tweets#edit'
-  get   'users/:id'    =>  'users#show'
+  get   'tweets/:id'  =>   'tweets#show'
+  get   'users/:id'    =>  'users#show'       
   # resources :tweets do
   # end
 end

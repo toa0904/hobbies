@@ -9,7 +9,8 @@
             .contents__top
               = tweet.user.nickname
             .contents__image
-              = image_tag ("#{tweet.image}")
+              = link_to "/tweets/#{tweet.id}", method: :get do
+                = image_tag ("#{tweet.image}")
             .contents__text
               .button-like
                 %i.far.fa-comment

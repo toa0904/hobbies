@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+// = require data-confirm-modal
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .

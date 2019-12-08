@@ -7,7 +7,7 @@
       #nav-mobile.right.hide-on-med-and-down
         - if user_signed_in?
           %li
-            = link_to tweets_new_path, class: 'header-text' do
+            = link_to tweets_path, class: 'header-text' do
               投稿する
           %li
             = link_to destroy_user_session_path, class: 'header-text', method: :delete do

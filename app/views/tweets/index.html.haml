@@ -7,9 +7,16 @@
     .side2
       マイぺージ
     .side3
-      ミニゲーム
+      投稿する
     .side4
       チャット
+    .side5
+      ミニゲーム
+    .side6
+      - if user_signed_in?
+        ログアウト
+      - else
+        ログイン/新規登録
   .content
     %ul
       - @tweet.each do |tweet|

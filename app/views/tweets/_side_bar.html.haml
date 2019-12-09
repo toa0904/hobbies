@@ -2,12 +2,13 @@
   = link_to root_path, class: 'side_text'  do
     .side1
       HOME
-    .side1
-      - if user_signed_in?
-        = link_to "/users/#{current_user.id}", class: 'side_text' do
+    - if user_signed_in?
+      = link_to "/users/#{current_user.id}", class: 'side_text' do
+        .side1
           MyPage
-      - else
-        = link_to new_user_registration_path, class: 'side_text' do
+    - else
+      = link_to new_user_registration_path, class: 'side_text' do
+        .side1
           Sorry
   = link_to new_tweet_path, class: 'side_text'  do
     .side1

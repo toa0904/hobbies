@@ -23,7 +23,6 @@ main {
     background-color: brown;
     height: 300px;
     img {
-      border: 1px solid #385185;
       height: 100%;
       width: 100%;
     }
@@ -62,3 +61,13 @@ main {
     }
   }
 }
+
+.side {
+  width:300px;
+  min-height:500px;
+  height:auto ;
+  background-color:#009b9f;
+  float:right;
+  margin-right: 30px;
+  margin-top:70px;
+  }

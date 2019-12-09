@@ -1,17 +1,27 @@
 .side
-  = link_to root_path do
+  = link_to root_path, class: 'side_text'  do
     .side1
       HOME
+    .side1
+      - if user_signed_in?
+        = link_to "/users/#{current_user.id}", class: 'side_text' do
+          MyPage
+      - else
+        = link_to new_user_registration_path, class: 'side_text' do
+          Sorry
+  = link_to new_tweet_path, class: 'side_text'  do
+    .side1
+      Tweet
   .side1
-    マイぺージ
+    .side_text
+      Chat
   .side1
-    投稿する
-  .side1
-    チャット
-  .side1
-    ミニゲーム
+    .side_text
+      Game
   .side2
     - if user_signed_in?
-      ログアウト
+      = link_to destroy_user_session_path, class: 'side_text', method: :delete do
+        LogOut
     - else
-      ログイン/新規登録
+      = link_to new_user_registration_path, class: 'side_text' do
+        LogIn/SignUp

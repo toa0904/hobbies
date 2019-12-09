@@ -14,7 +14,6 @@
                 = image_tag ("#{tweet.image}")
             .contents__text
               .button-like
-                %i.far.fa-comment
               = tweet.text
               - if user_signed_in? && current_user.id == tweet.user_id
                 = link_to '削除', "/tweets/#{tweet.id}", method: :delete, class: 'delete-btn', data: { confirm: "本当に削除してもよろしいですか？"}

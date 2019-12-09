@@ -1,5 +1,6 @@
 = render 'shared/mypage_header'
 %main
+  = render 'tweets/side_bar'
   .content
     %ul
       - @tweet.each do |tweet|
@@ -13,4 +14,7 @@
               .button-like
                 %i.far.fa-comment
               = tweet.text
+              - if user_signed_in? && current_user.id == tweet.user_id
+                = link_to '削除', "/tweets/#{tweet.id}", method: :delete, class: 'delete-btn', data: { confirm: "本当に削除してもよろしいですか？"}
+                = link_to '編集', "/tweets/#{tweet.id}/edit", method: :get, class: 'edit-btn'
     = paginate(@tweet)

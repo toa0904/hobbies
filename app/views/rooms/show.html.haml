@@ -1,9 +1,9 @@
 = render 'shared/chat_header'
-.side-content
-  グループ名
-.chat-contents#messages
-  = render @messages
+.chat-contents#message
+  .chat-content#messages
+    = render @messages
 .footer
-  %input(type="text" id="chat-input")/
-  %button#button
-    送信
+  .footer__button
+    %input.input-box(type="text" id="chat-input" placeholder="type a message")/
+    %button.button#button
+      送信

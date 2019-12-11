@@ -11,6 +11,9 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
   received: function(message) {
     const messages = document.getElementById('messages')
     messages.innerHTML += message
+    var scroll = document.getElementById('message');
+      scroll.scrollTop = scroll.scrollHeight;
+      scroll.animate({scrollTop: scroll.scrollHeight});
     // Called when there's incoming data on the websocket for this channel
   },
 

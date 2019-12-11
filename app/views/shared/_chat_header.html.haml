@@ -1,0 +1,23 @@
+%nav
+  .nav-wrapper
+    = link_to root_path, class: "brand-logo" do
+      Chat Room
+    %ul
+      #nav-mobile.right.hide-on-med-and-down
+        - if user_signed_in?
+          %li
+            = link_to "/users/#{current_user.id}", class: 'header-text' do
+              = current_user.nickname
+          %li
+            = link_to new_tweet_path, class: 'header-text' do
+              投稿する
+          %li
+            = link_to destroy_user_session_path, class: 'header-text', method: :delete do
+              ログアウト
+        - else
+          %li
+            = link_to new_user_session_path, class: 'header-text' do
+              ログイン
+          %li
+            = link_to new_user_registration_path, class: 'header-text' do
+              新規登録

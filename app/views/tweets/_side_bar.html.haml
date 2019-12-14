@@ -16,9 +16,6 @@
   = link_to rooms_show_path, class: 'side_text' do
     .side1
       Chat
-  .side1
-    .side_text
-      Game
   .side2
     - if user_signed_in?
       = link_to destroy_user_session_path, class: 'side_text', method: :delete do
